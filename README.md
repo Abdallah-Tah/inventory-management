@@ -1,2 +1,2 @@
-# inventory-management
+# Inventory-Management
 This is a simple challenge for Backend Developer Intern - Fall 2022 (Remote, US &amp; Canada) posted By Shopify.
