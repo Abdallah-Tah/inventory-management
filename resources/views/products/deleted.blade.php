@@ -65,7 +65,7 @@
                                                                             action="{{ route('products.restore', $product->id) }}"
                                                                             method="POST">
                                                                             @csrf
-                                                                            @method('GET')
+                                                                            @method('PUT')
                                                                             <div class="modal-body">
                                                                                 <p>{{ __('Are you sure you want to restore this product?') }}
                                                                                 </p>

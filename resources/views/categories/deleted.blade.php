@@ -53,7 +53,7 @@
                                                                             action="{{ route('categories.restore', $category->id) }}"
                                                                             method="POST">
                                                                             @csrf
-                                                                            @method('GET')
+                                                                            @method('PUT')
                                                                             <p>{{ __('Are you sure you want to restore this category?') }}
                                                                             </p>
                                                                             <p>{{ __('Category name:') }}

@@ -64,7 +64,7 @@
                                                                                 id="name" name="name"
                                                                                 value="{{ $category->name }}">
                                                                         </div>
-                                                                        <div class="form-group">
+                                                                        <div class="model-footer">
                                                                         <button type="submit"
                                                                             class="btn btn-primary">Update</button>
                                                                         <button type="button" class="btn btn-secondary"
@@ -105,8 +105,12 @@
                                                                         <p>Are you sure you want to delete this category?
                                                                         </p>
                                                                         <p>{{ $category->name }}</p>
+                                                                    <div class="modal-footer">
                                                                         <button type="submit"
                                                                             class="btn btn-danger">Delete</button>
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close</button>
+                                                                    </div>
                                                                     </form>
                                                                 </div>
                                                             </div>

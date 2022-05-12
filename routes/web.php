@@ -29,7 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/products/{product}/edit', [App\Http\Controllers\ProductController::class, 'edit'])->name('products.edit');
     Route::put('/products/{product}', [App\Http\Controllers\ProductController::class, 'update'])->name('products.update');
     Route::delete('/products/{product}', [App\Http\Controllers\ProductController::class, 'destroy'])->name('products.destroy');
-    Route::get('/products/{id}/restore', [App\Http\Controllers\ProductController::class, 'restore'])->name('products.restore');
+    Route::put('/products/{id}/restore', [App\Http\Controllers\ProductController::class, 'restore'])->name('products.restore');
     Route::get('/products/{id}/force-delete', [App\Http\Controllers\ProductController::class, 'forceDelete'])->name('products.force-delete');
     Route::get('/product/deleted', [App\Http\Controllers\ProductController::class, 'viewDeletedProducts'])->name('products.deleted');
 
@@ -38,7 +38,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/categories/{category}/edit', [App\Http\Controllers\CategoryController::class, 'edit'])->name('categories.edit');
     Route::put('/categories/{category}', [App\Http\Controllers\CategoryController::class, 'update'])->name('categories.update');
     Route::delete('/categories/{category}', [App\Http\Controllers\CategoryController::class, 'destroy'])->name('categories.destroy');
-    Route::get('/categories/{id}/restore', [App\Http\Controllers\CategoryController::class, 'restoreCategory'])->name('categories.restore');
+    Route::put('/categories/{id}/restore', [App\Http\Controllers\CategoryController::class, 'restoreCategory'])->name('categories.restore');
     Route::get('/categories/{id}/force-delete', [App\Http\Controllers\CategoryController::class, 'forceDelete'])->name('categories.force-delete');
     Route::get('/categories/deleted', [App\Http\Controllers\CategoryController::class, 'getDeletedCategories'])->name('categories.deleted');
 });
